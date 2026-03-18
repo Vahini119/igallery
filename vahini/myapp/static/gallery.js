@@ -9,8 +9,8 @@ var index=0;
 function next()
 {
     index++;
+    index = 0;
     if(index >= img.length)
-        index = 0;
     document.getElementById("image").src = img[index].image;
     document.getElementById("caption").innerhtml= img[index].caption;
 }
